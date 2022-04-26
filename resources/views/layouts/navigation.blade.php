@@ -11,9 +11,44 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <!-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('POS') }}
+                    </x-nav-link>
+                </div> -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('pos')" :active="Request::segment(1) === 'pos'">
+                        {{ __('POS') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('inventory')" :active="Request::segment(1) === 'inventory'">
+                        {{ __('Inventory') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('booking-channel')" :active="Request::segment(1) === 'booking-channel'">
+                        {{ __('Booking Channel') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('company')" :active="Request::segment(1) === 'company'">
+                        {{ __('Company') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('count-type')" :active="Request::segment(1) === 'count-type'">
+                        {{ __('Count Type') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('inventory-type-code')" :active="Request::segment(1) === 'inventory-type-code'">
+                        {{ __('Inventory Type Code') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('rate-plan')" :active="Request::segment(1) === 'rate-plan'">
+                        {{ __('Rate Plan') }}
                     </x-nav-link>
                 </div>
             </div>
