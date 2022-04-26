@@ -1,7 +1,18 @@
 require('./bootstrap');
 
-import Alpine from 'alpinejs';
+require('alpinejs');
 
-window.Alpine = Alpine;
+import { createApp } from 'vue';
+import router from './router';
 
-Alpine.start();
+import BookingChannelIndex from './components/booking_channel/BookingChannelIndex.vue';
+
+createApp({
+    data() {
+        return { open: false}
+    },
+    components: {
+        BookingChannelIndex
+    }
+}).use(router).mount('#app')
+

@@ -57,3 +57,8 @@ Route::get('inventory-type-code', function () {
 Route::get('rate-plan', function () {
     return view('rate_plan');
 });
+
+// VueJS
+Route::view('/{any}', 'dashboard')
+    ->middleware(['auth'])
+    ->where('any', '.*');
