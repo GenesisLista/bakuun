@@ -1,7 +1,6 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
-import { data } from "autoprefixer";
 
 export default function useCountType() {
 

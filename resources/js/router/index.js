@@ -15,6 +15,11 @@ import CountTypeIndex from '../components/count_type/CountTypeIndex.vue'
 import CountTypeCreate from '../components/count_type/CountTypeCreate.vue'
 import CountTypeEdit from '../components/count_type/CountTypeEdit.vue'
 
+// Inventory Type Code
+import InventoryTypeCodeIndex from '../components/inventory_type_code/InventoryTypeCodeIndex.vue'
+import InventoryTypeCodeCreate from '../components/inventory_type_code/InventoryTypeCodeCreate.vue'
+import InventoryTypeCodeEdit from '../components/inventory_type_code/InventoryTypeCodeEdit.vue'
+
 const routes = [
     // Booking Channel
     {
@@ -67,6 +72,24 @@ const routes = [
         path: '/count-type/:id/edit',
         name: 'counttype.edit',
         component: CountTypeEdit,
+        props: true
+    },
+
+    // Inventory Type Code
+    {
+        path: '/inventory-type-code',
+        name: 'inventorytypecode.index',
+        component: InventoryTypeCodeIndex
+    },
+    {
+        path: '/inventory-type-code/create',
+        name: 'inventorytypecode.create',
+        component: InventoryTypeCodeCreate
+    },
+    {
+        path: '/inventory-type-code/:id/edit',
+        name: 'inventorytypecode.edit',
+        component: InventoryTypeCodeEdit,
         props: true
     }
 ];
