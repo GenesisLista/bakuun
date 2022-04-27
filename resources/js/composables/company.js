@@ -1,7 +1,6 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
-import { compileStyleAsync } from "vue/compiler-sfc";
 
 export default function useCompany() {
 

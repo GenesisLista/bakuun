@@ -10,6 +10,11 @@ import CompanyIndex from '../components/company/CompanyIndex.vue'
 import CompanyCreate from '../components/company/CompanyCreate.vue'
 import CompanyEdit from '../components/company/CompanyEdit.vue'
 
+// Count Type
+import CountTypeIndex from '../components/count_type/CountTypeIndex.vue'
+import CountTypeCreate from '../components/count_type/CountTypeCreate.vue'
+import CountTypeEdit from '../components/count_type/CountTypeEdit.vue'
+
 const routes = [
     // Booking Channel
     {
@@ -44,6 +49,24 @@ const routes = [
         path: '/company/:id/edit',
         name: 'company.edit',
         component: CompanyEdit,
+        props: true
+    },
+
+    // Count Type
+    {
+        path: '/count-type',
+        name: 'counttype.index',
+        component: CountTypeIndex
+    },
+    {
+        path: '/count-type/create',
+        name: 'counttype.create',
+        component: CountTypeCreate
+    },
+    {
+        path: '/count-type/:id/edit',
+        name: 'counttype.edit',
+        component: CountTypeEdit,
         props: true
     }
 ];

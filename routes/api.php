@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\BookingChannelController;
 use App\Http\Controllers\Api\CompanyController;
+use App\Http\Controllers\Api\CountTypeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,6 @@ Route::apiResource('booking-channel', BookingChannelController::class);
 
 // Company
 Route::apiResource('company', CompanyController::class);
+
+// Count Type
+Route::apiResource('count-type', CountTypeController::class);

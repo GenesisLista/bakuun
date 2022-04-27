@@ -7,6 +7,7 @@ import router from './router';
 
 import BookingChannelIndex from './components/booking_channel/BookingChannelIndex.vue';
 import CompanyIndex from './components/company/CompanyIndex.vue';
+import CountTypeIndex from './components/count_type/CountTypeIndex.vue';
 
 createApp({
     data() {
@@ -14,7 +15,8 @@ createApp({
     },
     components: {
         BookingChannelIndex,
-        CompanyIndex
+        CompanyIndex,
+        CountTypeIndex
     }
 }).use(router).mount('#app')
 
