@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\BookingChannelController;
+use App\Http\Controllers\Api\CompanyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Booking Channel
 Route::apiResource('booking-channel', BookingChannelController::class);
+
+// Company
+Route::apiResource('company', CompanyController::class);
