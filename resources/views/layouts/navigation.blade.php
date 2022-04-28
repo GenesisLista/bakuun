@@ -47,7 +47,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="url('rate-plan')" :active="Request::segment(1) === 'rate-plan'">
+                    <x-nav-link :href="url('rate-plan-code')" :active="Request::segment(1) === 'rate-plan-code'">
                         {{ __('Rate Plan') }}
                     </x-nav-link>
                 </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RatePlanCodeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,9 +55,7 @@ Route::get('inventory-type-code', function () {
 });
 
 // Rate Plan
-Route::get('rate-plan', function () {
-    return view('rate_plan');
-});
+Route::resource('rate-plan-code', RatePlanCodeController::class);
 
 // VueJS
 Route::view('/{any}', 'dashboard')
