@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\PointOfSaleController;
 use App\Http\Controllers\RatePlanCodeController;
 use Illuminate\Support\Facades\Route;
 
@@ -61,6 +62,9 @@ Route::resource('rate-plan-code', RatePlanCodeController::class);
 // Inventory
 Route::post('inventory/rate-plan-code-list', [InventoryController::class, 'rate_plan_code_list'])->name('inventory.rate-plan-code-list');
 Route::resource('inventory', InventoryController::class);
+
+// Point Of Sale
+Route::resource('pos', PointOfSaleController::class);
 
 // VueJS
 Route::view('/{any}', 'dashboard')
