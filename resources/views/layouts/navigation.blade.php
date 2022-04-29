@@ -22,7 +22,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="url('inventory')" :active="Request::segment(1) === 'inventory'">
+                    <x-nav-link :href="route('inventory.index')" :active="Request::segment(1) === 'inventory'">
                         {{ __('Inventory') }}
                     </x-nav-link>
                 </div>
@@ -47,7 +47,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="url('rate-plan-code')" :active="Request::segment(1) === 'rate-plan-code'">
+                    <x-nav-link :href="route('rate-plan-code.index')" :active="Request::segment(1) === 'rate-plan-code'">
                         {{ __('Rate Plan') }}
                     </x-nav-link>
                 </div>

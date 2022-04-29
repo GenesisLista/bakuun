@@ -25,7 +25,7 @@
                     <label for="itcode" class="block text-sm font-medium text-gray-700">Inventory Type Code</label>
                     <div class="relative flex w-full">
                         <select name="itcode" id="itcode" class="block w-full py-3 pl-4 pr-8 bg-white border border-gray-300 rounded-sm appearance-none cursor-pointer focus:outline-none hover:border-gray-400">
-                        <option value="">Select Inventory Type <Code></Code></option>
+                        <option value="">Select Inventory Type Code</option>
                         @foreach($inventory_type_code as $itcode)
                         <option value="{{ $itcode->id }}">{{ $itcode->name }}</option>
                         @endforeach
